@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Recipe</title>
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/6910963/pexels-photo-6910963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: saddlebrown;
+      font-family: sans-serif;
+    }
+    .add-recipe-container {
+      width: 400px;
+      height: 450px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background-color: #f1f1f1;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background-color: #7ac048;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .form .add-btn {
+      width: 50%;
+      float: right;
+    }
+    .form .clear-btn {
+      width: 50%;
+      float: left;
+      background-color: #f1f1f1;
+      color: #7ac048;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="add-recipe-container">
+  <h1>Add Recipe</h1>
+  <form>
+    <input type="text" placeholder="Recipe Name" required>
+    <input type="text" placeholder="Category" required>
+    <input type="text" placeholder="Ingredients" required>
+    <textarea rows="5" placeholder="Instructions" required></textarea>
+    <button type="submit" class="add-btn">Add Recipe</button>
+  </form>
+</div>
+</body>
