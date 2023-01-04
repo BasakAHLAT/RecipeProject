@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Project</title>
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: black; /*#7ac048;*/
+      font-family: sans-serif;
+    }
+    .recipes-container {
+      width: 80%;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 50%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background-color: #f1f1f1;
+    }
+    select {
+      width: 50%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background-color: #f1f1f1;
+    }
+    .search-btn {
+      width: 20%;
+      padding: 12px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background-color: black;
+              /*#7ac048;*/
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="recipes-container">
+  <h1>Recipes</h1>
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search by name...">
+      <button type="submit">Search</button>
+    </form>
+    <form>
+      <label for="category-select">Filter by category:</label>
+      <select id="category-select">
+        <option value="all">All</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="dessert">Dessert</option>
+      </select>
+    </form>
+  </div>
+  <div class="recipes-list">
+    <div class="recipe">
+      <h2>Omelette</h2>
+      <p>Category: Breakfast</p>
+      <p>Description: A simple omelette with eggs, cheese, and vegetables.</p>
+    </div>
+    <div class="recipe">
+      <h2>Tomato Soup</h2>
+      <p>Category: Lunch</p>
+      <p>Description: A creamy tomato soup with a hint of basil.</p>
+    </div>
+    <div class="recipe">
+      <h2>Roast Chicken</h2>
+      <p>Category: Dinner</p>
+      <p>Description: A succulent roast chicken with potatoes and carrots.</p>
+    </div>
+    <div class="recipe">
+      <h2>Chocolate Cake</h2>
+      <p>Category: Dessert</p>
+      <p>Description: A rich and chocolatey cake with a creamy frosting.</p>
+    </div>
+  </div>
+  <div class="footer">Basak AHLAT</div>
+</div>
+</body>
+
