@@ -6,7 +6,7 @@ RecipeProject, Spring Boot ve PostgreSQL kullanılarak geliştirilen, kullanıc�
 
 ## 🎓 Proje Bilgileri
 
-- **Proje Türü:** Lisans Dersi Projesi (Yazılım Mühendisliği Süreçleri)
+- **Proje Türü:** Yazılım Mühendisliği Süreçleri
 - **Dönem:** 2022–2023 Bahar Dönemi
 - **Proje Sahibi:** Başak AHLAT
 
